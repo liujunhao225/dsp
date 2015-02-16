@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sample document 2</title>
+<!--  <link rel="stylesheet" href="style2.css"> -->
+<style type="text/css">
+body {
+	counter-reset: section;
+}
+
+h1 {
+	conter-reset: subsection;
+}
+
+h1:before {
+	content: "Section " counter(section) ".";
+	counter-increment: section;
+}
+
+h2:before {
+	counter-increment: subsection;
+	content: counter(section) "." counter(subsection) " ";
+}
+</style>
+</head>
+<body>
+	<h1>无脑的类型</h1>
+	<h2>2B</h2>
+	<h2>文艺</h2>
+	<h2>普通</h2>
+	<h1>NBA明星</h1>
+	<h2>乔丹</h2>
+	<h2>科比</h2>
+	<h2>詹姆斯</h2>
+</body>
+</html>
