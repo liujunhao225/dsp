@@ -1,0 +1,25 @@
+例子：
+  <!DOCTYPE html> 
+<html> 
+<head> 
+<meta charset="utf-8" /> 
+<title>父div不自适应高度实例</title> 
+<style> 
+.divcss5{width:500px;border:1px solid #000;padding:10px} 
+.divcss5-lf{ float:left; width:220px; height:100px; background:#000} 
+.divcss5-rt{ float:right; width:230px; height:100px; background:#06F} 
+</style> 
+</head> 
+<body> 
+<div class="divcss5"> 
+<div class="divcss5-lf"></div> 
+<div class="divcss5-rt"></div> 
+
+</div> 
+</body> 
+</html> 
+divcss5高度不能改变。
+解决办法1：
+  在divcss5中加入<div style="clear:both">可自适应高度。
+解决办法2：
+  在divcss5 的style中加入overflow:hidden 可自适就高度。
